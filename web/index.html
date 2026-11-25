@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>John Gowelle — PHP, Laravel and Swift</title>
+<meta name="description" content="John Gowelle is a software developer in Tanzania working in PHP, Laravel and Swift. Projects, writing and contact.">
+<meta name="theme-color" content="#0e1320">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1320'/%3E%3Crect x='10' y='24' width='44' height='16' fill='none' stroke='%23f1ece2' stroke-width='4' rx='8'/%3E%3Crect x='10' y='24' width='28' height='16' fill='%23ff8a4c'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="John Gowelle — PHP, Laravel and Swift">
+<meta property="og:description" content="Seven public repositories, writing, and the principles behind them.">
+<link rel="preload" href="fonts/BigShoulders.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/InstrumentSans.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#catalogue">Skip to repositories</a>
+
+<header class="topbar">
+  <a class="brand" href="#top">
+    <span class="brand-mark" aria-hidden="true">GJ</span>
+    <span class="brand-name">Gowelle John</span>
+  </a>
+  <nav class="topnav" aria-label="Primary">
+    <a href="#catalogue">Catalogue</a>
+    <a href="#about">About</a>
+    <a href="#writing">Writing</a>
+    <a href="#contact">Contact</a>
+    <a href="https://github.com/gowelle" target="_blank" rel="noopener noreferrer">GitHub&nbsp;&#8599;</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">Open source &middot; Tanzania</p>
+      <h1 id="hero-title">I build the tools<br>I wish existed,<br><span class="accent">then share them.</span></h1>
+      <p class="lede">Seven public repositories: Laravel packages for payments, messaging, moderation and commerce &mdash; and Paddock, a local PHP environment for Intel Macs that works the moment it is installed.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#catalogue">Browse the catalogue</a>
+        <a class="btn btn-ghost" href="https://github.com/gowelle" target="_blank" rel="noopener noreferrer">Follow on GitHub&nbsp;&#8599;</a>
+      </div>
+      <dl class="stats">
+        <div><dt>Repositories</dt><dd>7</dd></div>
+        <div><dt>Composer packages</dt><dd>6</dd></div>
+        <div><dt>Packagist downloads</dt><dd>4,052</dd></div>
+        <div><dt>GitHub stars</dt><dd>10</dd></div>
+      </dl>
+    </div>
+
+    <aside class="profile-card" aria-label="About John Gowelle">
+      <img class="avatar" src="assets/gowelle.jpg" alt="Portrait of John Gowelle" width="88" height="88" loading="eager">
+      <p class="profile-name">John Gowelle</p>
+      <p class="profile-role">Software developer &mdash; Tanzania</p>
+      <p class="profile-bio">PHP, Laravel and Swift. I build the tools I wish existed, then share them.</p>
+      <dl class="profile-facts">
+        <div><dt>Toolbox</dt><dd>PHP &middot; Laravel &middot; Swift &middot; Vue</dd></div>
+        <div><dt>Code</dt><dd><a href="https://github.com/gowelle" target="_blank" rel="noopener noreferrer">github.com/gowelle</a></dd></div>
+        <div><dt>Earlier site</dt><dd><a href="https://gowelle.github.io/" target="_blank" rel="noopener noreferrer">gowelle.github.io</a></dd></div>
+      </dl>
+    </aside>
+  </section>
+
+  <section class="now" aria-label="Currently">
+    <div class="now-grid">
+      <div class="now-item">
+        <p class="now-label">Shipping</p>
+        <p class="now-value">Paddock v0.4.0</p>
+        <p class="now-sub">released 24 Nov 2026</p>
+      </div>
+      <div class="now-item">
+        <p class="now-label">Maintaining</p>
+        <p class="now-value">Six Laravel packages</p>
+        <p class="now-sub">4,052 downloads on Packagist</p>
+      </div>
+      <div class="now-item">
+        <p class="now-label">Based in</p>
+        <p class="now-value">Tanzania</p>
+        <p class="now-sub">working in PHP, Laravel and Swift</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalogue" id="catalogue" aria-labelledby="catalogue-title">
+    <div class="section-head">
+      <h2 id="catalogue-title">The catalogue</h2>
+      <p>The seven projects I would put in front of you first, in the order I would walk you through them.</p>
+    </div>
+
+    <div class="controls">
+      <div class="chips" role="group" aria-label="Filter by category">
+        <button type="button" class="chip" data-filter="all" aria-pressed="true">All <span>7</span></button>
+        <button type="button" class="chip" data-filter="devtools" aria-pressed="false">Developer tools <span>1</span></button>
+        <button type="button" class="chip" data-filter="payments" aria-pressed="false">Payments <span>2</span></button>
+        <button type="button" class="chip" data-filter="moderation" aria-pressed="false">Moderation <span>2</span></button>
+        <button type="button" class="chip" data-filter="commerce" aria-pressed="false">Commerce &amp; APIs <span>2</span></button>
+      </div>
+      <div class="tools">
+        <label class="search">
+          <span class="sr-only">Search repositories</span>
+          <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m13.4 13.4 3.4 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <input type="search" id="search" placeholder="Search name, topic&hellip;" autocomplete="off" spellcheck="false">
+        </label>
+        <label class="sort">
+          <span class="sr-only">Sort repositories</span>
+          <select id="sort">
+            <option value="curated">Curated order</option>
+            <option value="stars">Most starred</option>
+            <option value="updated">Recently updated</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <p class="result-count" id="result-count" aria-live="polite">7 repositories</p>
+
+    <ol class="repo-grid" id="repo-grid">
+
+      <li class="grid-span">
+        <article class="repo-card repo-card--featured" data-categories="devtools" data-lang="Swift" data-stars="0" data-date="2026-11-24"
+          data-search="paddock swift swiftui macos intel menu bar app local php laravel environment caddy mysql postgres redis mailpit xdebug daemon cli devtools developer tools">
+          <div class="card-top">
+            <img class="repo-icon" src="assets/paddock-icon.svg" alt="Paddock app icon" width="64" height="64" loading="lazy">
+            <span class="index" aria-hidden="true">01</span>
+          </div>
+          <p class="card-kicker">Featured &middot; Native macOS app</p>
+          <h3><a href="/projects/paddock.html">Paddock</a></h3>
+          <p class="desc">A local PHP and Laravel environment for Intel Macs. A native menu-bar app, daemon and CLI serve any folder at <code>&lt;folder&gt;.test</code>, with PHP, Caddy, MySQL, Postgres, Redis, Mailpit and Xdebug built in.</p>
+          <ul class="topics" aria-label="Topics">
+            <li>macOS</li><li>SwiftUI</li><li>PHP 8.4 &amp; 8.5</li><li>Laravel</li>
+          </ul>
+          <p class="meta"><span class="lang"><i class="dot" style="--dot:#f05138"></i>Swift</span><span>Updated <time datetime="2026-11-24">24 Nov 2026</time></span></p>
+          <p class="links">
+            <a href="/projects/paddock.html">Project page&nbsp;&rarr;</a>
+            <a href="https://github.com/gowelle/paddock" target="_blank" rel="noopener noreferrer">Repository&nbsp;&#8599;</a>
+            <a href="https://gowelle.github.io/paddock/" target="_blank" rel="noopener noreferrer">Website&nbsp;&#8599;</a>
+          </p>
+        </article>
+      </li>
+
+      <li>
+        <article class="repo-card" data-categories="payments" data-lang="PHP" data-stars="4" data-date="2026-06-07"
+          data-search="laravel beem africa sms airtime otp payment checkout collections contacts moja mobile money messaging payments livewire vue php">
+          <div class="card-top">
+            <span class="index" aria-hidden="true">02</span>
+            <span class="lang"><i class="dot" style="--dot:#777bb4"></i>PHP</span>
+          </div>
+          <h3><a href="/projects/laravel-beem-africa.html">laravel-beem-africa</a></h3>
+          <p class="desc">A single Laravel interface to Beem&rsquo;s APIs &mdash; SMS, airtime, OTP, payment checkout, collections, contacts, Moja multi-channel messaging and international SMS, with Livewire and Vue components included.</p>
+          <ul class="topics" aria-label="Topics">
+            <li>SMS</li><li>OTP</li><li>Payments</li><li>Livewire</li>
+          </ul>
+          <p class="meta"><span><svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.9 3.9 4.3.6-3.1 3 .7 4.3L8 11.4 4.2 13.4l.7-4.3-3.1-3 4.3-.6z"/></svg>4 stars</span><span>Updated <time datetime="2026-06-07">7 Jun 2026</time></span></p>
+          <p class="links">
+            <a href="/projects/laravel-beem-africa.html">Project page&nbsp;&rarr;</a>
+            <a href="https://github.com/gowelle/laravel-beem-africa" target="_blank" rel="noopener noreferrer">Repository&nbsp;&#8599;</a>
+            <a href="https://packagist.org/packages/gowelle/laravel-beem-africa" target="_blank" rel="noopener noreferrer">Packagist&nbsp;&#8599;</a>
+          </p>
+        </article>
+      </li>
+
+      <li>
+        <article class="repo-card" data-categories="payments" data-lang="PHP" data-stars="1" data-date="2026-05-09"
+          data-search="flutterwave php laravel payments mobile money webhooks refunds transfers virtual accounts retry rate limiting api v4">
+          <div class="card-top">
+            <span class="index" aria-hidden="true">03</span>
+            <span class="lang"><i class="dot" style="--dot:#777bb4"></i>PHP</span>
+          </div>
+          <h3><a href="/projects/flutterwave-php.html">flutterwave-php</a></h3>
+          <p class="desc">A type-safe Laravel wrapper for Flutterwave API v4: charges, refunds, transfers, virtual accounts and webhooks, with automatic retries, rate limiting and webhook verification.</p>
+          <ul class="topics" aria-label="Topics">
+            <li>Payments</li><li>Mobile money</li><li>Webhooks</li>
+          </ul>
+          <p class="meta"><span><svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.9 3.9 4.3.6-3.1 3 .7 4.3L8 11.4 4.2 13.4l.7-4.3-3.1-3 4.3-.6z"/></svg>1 star</span><span>Updated <time datetime="2026-05-09">9 May 2026</time></span></p>
+          <p class="links">
+            <a href="/projects/flutterwave-php.html">Project page&nbsp;&rarr;</a>
+            <a href="https://github.com/gowelle/flutterwave-php" target="_blank" rel="noopener noreferrer">Repository&nbsp;&#8599;</a>
+            <a href="https://packagist.org/packages/gowelle/flutterwave-php" target="_blank" rel="noopener noreferrer">Packagist&nbsp;&#8599;</a>
+          </p>
+        </article>
+      </li>
+
+      <li>
+        <article class="repo-card" data-categories="moderation" data-lang="PHP" data-stars="0" data-date="2026-11-20"
+          data-search="google moderator laravel moderation text image content safety blocklists multi language validation ai">
+          <div class="card-top">
+            <span class="index" aria-hidden="true">04</span>
+            <span class="lang"><i class="dot" style="--dot:#777bb4"></i>PHP</span>
+          </div>
+          <h3><a href="/projects/google-moderator.html">google-moderator</a></h3>
+          <p class="desc">Text and image moderation for Laravel using Google AI APIs. Opt-in blocklists, multi-language support, validation rules and swappable moderation engines.</p>
+          <ul class="topics" aria-label="Topics">
+            <li>Moderation</li><li>Google AI</li><li>Validation</li>
+          </ul>
+          <p class="meta"><span>Updated <time datetime="2026-11-20">20 Nov 2026</time></span></p>
+          <p class="links">
+            <a href="/projects/google-moderator.html">Project page&nbsp;&rarr;</a>
+            <a href="https://github.com/gowelle/google-moderator" target="_blank" rel="noopener noreferrer">Repository&nbsp;&#8599;</a>
+            <a href="https://packagist.org/packages/gowelle/google-moderator" target="_blank" rel="noopener noreferrer">Packagist&nbsp;&#8599;</a>
+          </p>
+        </article>
+      </li>
+
+      <li>
+        <article class="repo-card" data-categories="commerce" data-lang="PHP" data-stars="4" data-date="2026-03-21"
+          data-search="sku generator laravel ecommerce product variant hask trait commerce codes">
+          <div class="card-top">
+            <span class="index" aria-hidden="true">05</span>
+            <span class="lang"><i class="dot" style="--dot:#777bb4"></i>PHP</span>
+          </div>
+          <h3><a href="/projects/sku-generator.html">sku-generator</a></h3>
+          <p class="desc">Meaningful SKUs for Laravel commerce. Add the <code>HasSku</code> trait and products get readable codes like <code>TM-TSH-ABC12345-RED-LRG</code>, with configurable prefixes and variant rules.</p>
+          <ul class="topics" aria-label="Topics">
+            <li>E-commerce</li><li>SKUs</li><li>Laravel</li>
+          </ul>
+          <p class="meta"><span><svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.9 3.9 4.3.6-3.1 3 .7 4.3L8 11.4 4.2 13.4l.7-4.3-3.1-3 4.3-.6z"/></svg>4 stars</span><span>Updated <time datetime="2026-03-21">21 Mar 2026</time></span></p>
+          <p class="links">
+            <a href="/projects/sku-generator.html">Project page&nbsp;&rarr;</a>
+            <a href="https://github.com/gowelle/sku-generator" target="_blank" rel="noopener noreferrer">Repository&nbsp;&#8599;</a>
+            <a href="https://packagist.org/packages/gowelle/sku-generator" target="_blank" rel="noopener noreferrer">Packagist&nbsp;&#8599;</a>
+          </p>
+        </article>
+      </li>
+
+      <li>
+        <article class="repo-card" data-categories="commerce" data-lang="PHP" data-stars="1" data-date="2026-03-21"
+          data-search="laravel route matrix google routes api distance matrix waypoint optimisation traffic maps routing eloquent">
+          <div class="card-top">
+            <span class="index" aria-hidden="true">06</span>
+            <span class="lang"><i class="dot" style="--dot:#777bb4"></i>PHP</span>
+          </div>
+          <h3><a href="/projects/laravel-route-matrix.html">laravel-route-matrix</a></h3>
+          <p class="desc">Google Routes API for Laravel: route calculation, distance matrices and waypoint optimisation, with traffic-aware routing and Eloquent integration.</p>
+          <ul class="topics" aria-label="Topics">
+            <li>Routing</li><li>Matrices</li><li>Laravel</li>
+          </ul>
+          <p class="meta"><span><svg class="star" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.9 3.9 4.3.6-3.1 3 .7 4.3L8 11.4 4.2 13.4l.7-4.3-3.1-3 4.3-.6z"/></svg>1 star</span><span>Updated <time datetime="2026-03-21">21 Mar 2026</time></span></p>
+          <p class="links">
+            <a href="/projects/laravel-route-matrix.html">Project page&nbsp;&rarr;</a>
+            <a href="https://github.com/gowelle/laravel-route-matrix" target="_blank" rel="noopener noreferrer">Repository&nbsp;&#8599;</a>
+            <a href="https://packagist.org/packages/gowelle/laravel-route-matrix" target="_blank" rel="noopener noreferrer">Packagist&nbsp;&#8599;</a>
+          </p>
+        </article>
+      </li>
+
+      <li>
+        <article class="repo-card" data-categories="moderation" data-lang="PHP" data-stars="0" data-date="2026-03-21"
+          data-search="azure moderator laravel content safety moderation text image blocklists protected material phpstan">
+          <div class="card-top">
+            <span class="index" aria-hidden="true">07</span>
+            <span class="lang"><i class="dot" style="--dot:#777bb4"></i>PHP</span>
+          </div>
+          <h3><a href="/projects/azure-moderator.html">azure-moderator</a></h3>
+          <p class="desc">Azure AI Content Safety for Laravel. Text and image moderation, custom blocklists and protected-material detection, kept at PHPStan level 6.</p>
+          <ul class="topics" aria-label="Topics">
+            <li>Moderation</li><li>Azure AI</li><li>PHPStan</li>
+          </ul>
+          <p class="meta"><span>Updated <time datetime="2026-03-21">21 Mar 2026</time></span></p>
+          <p class="links">
+            <a href="/projects/azure-moderator.html">Project page&nbsp;&rarr;</a>
+            <a href="https://github.com/gowelle/azure-moderator" target="_blank" rel="noopener noreferrer">Repository&nbsp;&#8599;</a>
+            <a href="https://packagist.org/packages/gowelle/azure-moderator" target="_blank" rel="noopener noreferrer">Packagist&nbsp;&#8599;</a>
+          </p>
+        </article>
+      </li>
+
+    </ol>
+
+    <div class="empty" id="empty" hidden>
+      <p>No repositories match that.</p>
+      <button type="button" class="btn btn-ghost" id="reset-filters">Reset filters</button>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="section-head">
+      <h2 id="about-title">About</h2>
+      <p>A short version: I am John, and I would rather build the missing tool than work around it.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p class="about-lede">I'm John Gowelle, a software developer in Tanzania working in PHP, Laravel and Swift. I build the tools I wish existed, then share them — and they work on my machine.</p>
+        <p>Each package here exists because I needed it in a real project and didn't like what I found: a payment API that deserved a better wrapper, a moderator that needed to speak Swahili first, a Mac that refused to be left behind.</p>
+        <p class="about-actions">
+          <a class="btn btn-ghost" href="https://github.com/gowelle" target="_blank" rel="noopener noreferrer">Follow on GitHub&nbsp;&#8599;</a>
+        </p>
+      </div>
+      <div class="principles">
+        <h3>What I believe about software</h3>
+        <ol>
+          <li><strong>It should work the moment you install it.</strong><span>Every set-up step is a place to lose someone.</span></li>
+          <li><strong>Tools for getting started should be free.</strong><span>Nobody should pay for the ground they stand on.</span></li>
+          <li><strong>Software shouldn't ask what it can find out.</strong><span>If the answer is on the machine, go and look.</span></li>
+          <li><strong>“Works on my machine” is where testing starts.</strong><span>It is not where it ends. I have checked.</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="writing" id="writing" aria-labelledby="writing-title">
+    <div class="section-head">
+      <h2 id="writing-title">Writing</h2>
+      <p>Notes from building the tools above.</p>
+    </div>
+    <ul class="writing-list">
+      <li>
+        <a href="https://medium.com/@chiefmfalme/my-intel-mac-was-left-behind-so-i-built-its-local-php-environment-myself-b7d1d0c562ab" target="_blank" rel="noopener noreferrer">
+          <span class="writing-title">My Intel Mac was left behind, so I built its local PHP environment myself</span>
+          <span class="writing-dek">Why I built Paddock, and how it works.</span>
+        </a>
+        <span class="writing-source">Medium&nbsp;&#8599;</span>
+      </li>
+      <li>
+        <a href="https://medium.com/@chiefmfalme/vuejs-support-for-legacy-browsers-laravel-bfce528baa33" target="_blank" rel="noopener noreferrer">
+          <span class="writing-title">Vue.js support for legacy browsers in Laravel</span>
+          <span class="writing-dek">Getting a modern front end to run where it wasn't meant to.</span>
+        </a>
+        <span class="writing-source">Medium&nbsp;&#8599;</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="contact-card">
+      <div class="contact-intro">
+        <p class="eyebrow">Elsewhere</p>
+        <h2 id="contact-title">Find me on the internet.</h2>
+        <p class="contact-note">PHP, Laravel and Swift. Based in Tanzania.</p>
+      </div>
+      <ul class="contact-links">
+        <li><a href="https://github.com/gowelle" target="_blank" rel="noopener noreferrer"><span>GitHub</span><em>github.com/gowelle</em></a></li>
+        <li><a href="https://x.com/msadiniPekee" target="_blank" rel="noopener noreferrer"><span>X</span><em>@msadiniPekee</em></a></li>
+        <li><a href="https://medium.com/@chiefmfalme" target="_blank" rel="noopener noreferrer"><span>Medium</span><em>@chiefmfalme</em></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Built by John Gowelle, in Tanzania.</p>
+  <p>Repository details are a GitHub snapshot taken <time datetime="2026-11-25">25 November 2026</time>.</p>
+  <p><a href="https://github.com/gowelle" target="_blank" rel="noopener noreferrer">github.com/gowelle&nbsp;&#8599;</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+{
+  "snapshot": "25 Nov 2026",
+  "repos": [
+    {
+      "slug": "paddock",
+      "name": "Paddock",
+      "tagline": "A local PHP and Laravel environment for Intel Macs that works the moment it is installed.",
+      "category": "devtools",
+      "categoryLabel": "Developer tooling",
+      "language": "Swift",
+      "langColor": "#f05138",
+      "version": "v0.4.0",
+      "releaseDate": "24 Nov 2026",
+      "updated": "24 Nov 2026",
+      "license": "Proprietary",
+      "downloads": null,
+      "downloadsNote": "GitHub Releases",
+      "intro": [
+        "Paddock is a native macOS app, background service and command-line tool, written in Swift, that turns a folder of projects into working <code>.test</code> sites. Park a directory once and every folder inside it is served at <code>http://&lt;folder&gt;.test</code>, with trusted HTTPS when you ask for it.",
+        "It handles the parts of a local environment that usually need a checklist: PHP versions side by side, Xdebug per version, MySQL, PostgreSQL, Redis, Meilisearch, S3-compatible storage and a mail catcher — plus windows for mail, logs, databases and dumps."
+      ],
+      "highlights": [
+        "Zero-configuration sites: park a folder once and every project inside gets its own <code>.test</code> address.",
+        "Trusted local HTTPS through Paddock's own certificate authority, so browsers never complain.",
+        "PHP versions side by side, each site pinning its own; <code>php</code> and <code>composer</code> follow the folder you are in.",
+        "One-action services — MySQL, PostgreSQL, Redis (Valkey), Meilisearch, object storage, mail catcher — each printing its own <code>.env</code> lines.",
+        "A Mail window for what your apps send, a Logs window that folds Laravel stack traces, and dumps from <code>dump()</code> and <code>dd()</code> out of the page.",
+        "A per-project <code>paddock.json</code> keeps queue workers, schedulers and websocket servers running, and restarts them after crashes."
+      ],
+      "installLabel": "Install in Terminal",
+      "install": "curl -fsSL https://raw.githubusercontent.com/gowelle/paddock/main/Scripts/install.sh | bash",
+      "installNote": "Downloads the latest release, checks it against the release SHA-256, puts Paddock.app in /Applications and opens it. It asks for no password and runs nothing as root.",
+      "requirements": ["macOS 13 or later, Intel", "PHP 8.4 and 8.5", "Swift 6"],
+      "links": [
+        { "label": "Repository", "url": "https://github.com/gowelle/paddock" },
+        { "label": "Website", "url": "https://gowelle.github.io/paddock/" },
+        { "label": "Releases", "url": "https://github.com/gowelle/paddock/releases" }
+      ],
+      "images": [
+        {
+          "src": "/assets/paddock/menu-running-light.png",
+          "alt": "Paddock menu-bar window with start and stop, site list and PHP version controls",
+          "caption": "The menu-bar app: start and stop, open sites, switch PHP versions."
+        },
+        {
+          "src": "/assets/paddock/mail-text-light.png",
+          "alt": "Paddock Mail window showing captured mail with HTML, plain text and source views",
+          "caption": "The Mail window: read what your apps send — HTML, plain text and source."
+        }
+      ],
+      "related": ["laravel-beem-africa", "flutterwave-php"],
+      "metaDescription": "Paddock is a local PHP and Laravel environment for Intel Macs: a native menu-bar app, daemon and CLI that serve every folder at a .test address, with PHP, databases, mail, logs and Xdebug built in."
+    },
+    {
+      "slug": "laravel-beem-africa",
+      "name": "laravel-beem-africa",
+      "tagline": "Beem's SMS, OTP, airtime and payments behind one Laravel interface.",
+      "category": "payments",
+      "categoryLabel": "Payments & messaging",
+      "language": "PHP",
+      "langColor": "#777bb4",
+      "version": "v2.3.0",
+      "releaseDate": "7 Jun 2026",
+      "updated": "7 Jun 2026",
+      "license": "MIT",
+      "downloads": 414,
+      "downloadsNote": null,
+      "intro": [
+        "A Laravel package that wraps Beem's APIs in one consistent interface: SMS, OTP, airtime top-ups, payment checkout, collections, contacts, Moja multi-channel messaging and international SMS.",
+        "Checkout can redirect to Beem's hosted page or embed in an iframe, and webhooks are handled through Laravel events. OTP send and verify flows come with detailed error codes, and Livewire and Vue components cover the common screens."
+      ],
+      "highlights": [
+        "Redirect and iframe checkout with automatic webhook handling through Laravel events.",
+        "OTP send and verify with 18 detailed error codes for precise handling.",
+        "Airtime transfers across 40+ African networks, with balance and transaction status checks.",
+        "Collections, contacts, Moja multi-channel messaging and international SMS.",
+        "Pre-built Livewire and Vue/Inertia components for payment forms and verification.",
+        "Optional transaction storage for payment records."
+      ],
+      "installLabel": "Install with Composer",
+      "install": "composer require gowelle/laravel-beem-africa",
+      "installNote": "Then add your Beem credentials to the package configuration.",
+      "requirements": [],
+      "links": [
+        { "label": "Repository", "url": "https://github.com/gowelle/laravel-beem-africa" },
+        { "label": "Packagist", "url": "https://packagist.org/packages/gowelle/laravel-beem-africa" },
+        { "label": "Releases", "url": "https://github.com/gowelle/laravel-beem-africa/releases" }
+      ],
+      "images": [],
+      "related": ["flutterwave-php", "laravel-route-matrix"],
+      "metaDescription": "Laravel package for Beem's APIs: SMS, OTP, airtime, payment checkout, collections, contacts, Moja multi-channel messaging and international SMS."
+    },
+    {
+      "slug": "flutterwave-php",
+      "name": "flutterwave-php",
+      "tagline": "Flutterwave v4 payments, the Laravel way.",
+      "category": "payments",
+      "categoryLabel": "Payments",
+      "language": "PHP",
+      "langColor": "#777bb4",
+      "version": "v3.2.3",
+      "releaseDate": "9 May 2026",
+      "updated": "9 May 2026",
+      "license": "MIT",
+      "downloads": 777,
+      "downloadsNote": null,
+      "intro": [
+        "A type-safe Laravel wrapper for Flutterwave's v4 API. It covers the whole surface — charges, refunds, transfers, settlements, virtual accounts, wallets, orders, banks and mobile networks — behind PHP 8.3+ DTOs.",
+        "Retries, rate limiting, webhook verification and charge-session tracking are built in, so the payment plumbing stops being the fragile part of the project."
+      ],
+      "highlights": [
+        "Complete v4 coverage: payments, refunds, transfers, settlements, virtual accounts, wallets, orders and more.",
+        "Direct Charge orchestrator: customer, payment method and charge created in a single request.",
+        "Exponential-backoff retries for 5xx errors, rate limits and timeouts.",
+        "Configurable per-request rate limiting and secure webhook signature verification.",
+        "Type-safe DTOs and detailed, categorised error handling.",
+        "Livewire and Vue/Inertia components for payment forms, PIN/OTP entry and saved methods."
+      ],
+      "installLabel": "Install with Composer",
+      "install": "composer require gowelle/flutterwave-php",
+      "installNote": null,
+      "requirements": ["PHP 8.3+", "Laravel"],
+      "links": [
+        { "label": "Repository", "url": "https://github.com/gowelle/flutterwave-php" },
+        { "label": "Packagist", "url": "https://packagist.org/packages/gowelle/flutterwave-php" },
+        { "label": "Releases", "url": "https://github.com/gowelle/flutterwave-php/releases" }
+      ],
+      "images": [],
+      "related": ["laravel-beem-africa", "sku-generator"],
+      "metaDescription": "Type-safe Laravel wrapper for Flutterwave API v4: charges, refunds, transfers, virtual accounts, wallets and webhooks, with retries, rate limiting and webhook verification."
+    },
+    {
+      "slug": "google-moderator",
+      "name": "google-moderator",
+      "tagline": "Text and image moderation with Google AI, in Laravel.",
+      "category": "moderation",
+      "categoryLabel": "Moderation",
+      "language": "PHP",
+      "langColor": "#777bb4",
+      "version": "v2.0.0",
+      "releaseDate": "21 Mar 2026",
+      "updated": "20 Nov 2026",
+      "license": "MIT",
+      "downloads": 382,
+      "downloadsNote": null,
+      "intro": [
+        "A Laravel package for moderating text and images with Google AI APIs. It ships validation rules, opt-in blocklists and an engine switch between the Natural Language API, Vision API and Gemini.",
+        "It is Swahili-first and multi-language by design: blocklists can come from files or the database, support regular expressions and are cached for repeated checks."
+      ],
+      "highlights": [
+        "Text moderation for toxic, harmful or inappropriate content.",
+        "Image moderation for adult, violent or racy content.",
+        "Swahili-first multi-language support, extendable with custom blocklists.",
+        "File- or database-backed blocklists with regex support and caching.",
+        "Switch between the Natural Language API, Vision API and Gemini.",
+        "Fully testable with mocked Google clients."
+      ],
+      "installLabel": "Install with Composer",
+      "install": "composer require gowelle/google-moderator",
+      "installNote": null,
+      "requirements": [],
+      "links": [
+        { "label": "Repository", "url": "https://github.com/gowelle/google-moderator" },
+        { "label": "Packagist", "url": "https://packagist.org/packages/gowelle/google-moderator" },
+        { "label": "Releases", "url": "https://github.com/gowelle/google-moderator/releases" }
+      ],
+      "images": [],
+      "related": ["azure-moderator", "sku-generator"],
+      "metaDescription": "Laravel package for text and image moderation using Google AI: opt-in blocklists, Swahili-first multi-language support, validation rules and switchable engines."
+    },
+    {
+      "slug": "sku-generator",
+      "name": "sku-generator",
+      "tagline": "Meaningful, unique SKUs for Laravel products and variants.",
+      "category": "commerce",
+      "categoryLabel": "Commerce",
+      "language": "PHP",
+      "langColor": "#777bb4",
+      "version": "v2.0.0",
+      "releaseDate": "21 Mar 2026",
+      "updated": "21 Mar 2026",
+      "license": "MIT",
+      "downloads": 546,
+      "downloadsNote": null,
+      "intro": [
+        "Add the <code>HasSku</code> trait and Laravel e-commerce models get readable SKUs like <code>TM-TSH-ABC12345-RED-LRG</code>, generated from configurable prefixes, category accessors and variant rules.",
+        "Products and product variants are both supported out of the box, with per-model configuration for prefixes, separators and ULID length."
+      ],
+      "highlights": [
+        "Readable SKUs: product prefix, category code, ULID fragment and variant suffixes.",
+        "Add the <code>HasSku</code> trait; SKUs generate when models are created.",
+        "Configurable prefixes, separators and ULID length.",
+        "Per-model configuration for products and product variants.",
+        "Supports Laravel 11, 12 and 13 on PHP 8.3+.",
+        "Publishable configuration for app-specific rules."
+      ],
+      "installLabel": "Install with Composer",
+      "install": "composer require gowelle/sku-generator",
+      "installNote": "Publish the configuration with php artisan vendor:publish --tag=sku-generator-config.",
+      "requirements": ["PHP 8.3+", "Laravel 11, 12 or 13"],
+      "links": [
+        { "label": "Repository", "url": "https://github.com/gowelle/sku-generator" },
+        { "label": "Packagist", "url": "https://packagist.org/packages/gowelle/sku-generator" },
+        { "label": "Releases", "url": "https://github.com/gowelle/sku-generator/releases" }
+      ],
+      "images": [],
+      "related": ["laravel-route-matrix", "laravel-beem-africa"],
+      "metaDescription": "Generate meaningful, unique SKUs for Laravel e-commerce products and variants with a HasSku trait and configurable prefixes."
+    },
+    {
+      "slug": "laravel-route-matrix",
+      "name": "laravel-route-matrix",
+      "tagline": "Google Routes API: distances and routes without the boilerplate.",
+      "category": "commerce",
+      "categoryLabel": "Maps & routing",
+      "language": "PHP",
+      "langColor": "#777bb4",
+      "version": "v2.0.1",
+      "releaseDate": "21 Mar 2026",
+      "updated": "21 Mar 2026",
+      "license": "MIT",
+      "downloads": 1279,
+      "downloadsNote": null,
+      "intro": [
+        "A Laravel wrapper for the Google Routes API with route calculation, N×M distance matrices and waypoint optimisation. It supports five travel modes, traffic-aware routing and Eloquent integration.",
+        "The API is fluent and chainable, with helpers for the closest or fastest destination and waypoints as coordinates, Place IDs or addresses."
+      ],
+      "highlights": [
+        "Driving, walking, bicycling, two-wheeler and transit travel modes.",
+        "Real-time and historical traffic data.",
+        "Waypoints as coordinates, Place IDs or addresses.",
+        "Distance matrices across N×M origin-destination pairs.",
+        "Find-closest and fastest helpers with a fluent, chainable API.",
+        "125+ Pest tests."
+      ],
+      "installLabel": "Install with Composer",
+      "install": "composer require gowelle/laravel-route-matrix",
+      "installNote": null,
+      "requirements": [],
+      "links": [
+        { "label": "Repository", "url": "https://github.com/gowelle/laravel-route-matrix" },
+        { "label": "Packagist", "url": "https://packagist.org/packages/gowelle/laravel-route-matrix" },
+        { "label": "Releases", "url": "https://github.com/gowelle/laravel-route-matrix/releases" }
+      ],
+      "images": [],
+      "related": ["sku-generator", "flutterwave-php"],
+      "metaDescription": "Laravel wrapper for the Google Routes API: route calculation, distance matrices, travel modes, traffic-aware routing and waypoint optimisation."
+    },
+    {
+      "slug": "azure-moderator",
+      "name": "azure-moderator",
+      "tagline": "Content moderation with Azure AI Content Safety, in Laravel.",
+      "category": "moderation",
+      "categoryLabel": "Moderation",
+      "language": "PHP",
+      "langColor": "#777bb4",
+      "version": "v3.0.0",
+      "releaseDate": "21 Mar 2026",
+      "updated": "21 Mar 2026",
+      "license": "MIT",
+      "downloads": 654,
+      "downloadsNote": null,
+      "intro": [
+        "A Laravel package for analysing text and images with Azure AI Content Safety. It includes validation rules, custom blocklists, protected-material detection, multimodal analysis and strongly typed results.",
+        "Batch and asynchronous analysis are supported, and failures are retried. The package is covered by 90+ tests, integration tests against the real Azure API, and PHPStan level 6."
+      ],
+      "highlights": [
+        "Text and image moderation with configurable severity thresholds.",
+        "Multimodal analysis: text and image together (preview).",
+        "Custom blocklist management and protected-material detection.",
+        "Strongly typed DTO results and Laravel validation rules.",
+        "Retry handling plus artisan commands for testing and management.",
+        "90+ tests, integration tests and PHPStan level 6."
+      ],
+      "installLabel": "Install with Composer",
+      "install": "composer require gowelle/azure-moderator",
+      "installNote": null,
+      "requirements": [],
+      "links": [
+        { "label": "Repository", "url": "https://github.com/gowelle/azure-moderator" },
+        { "label": "Packagist", "url": "https://packagist.org/packages/gowelle/azure-moderator" },
+        { "label": "Releases", "url": "https://github.com/gowelle/azure-moderator/releases" }
+      ],
+      "images": [],
+      "related": ["google-moderator", "laravel-beem-africa"],
+      "metaDescription": "Laravel package for Azure AI Content Safety: text and image moderation, custom blocklists, protected-material detection and strongly typed results."
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paddock — Gowelle John</title>
+<meta name="description" content="Paddock is a local PHP and Laravel environment for Intel Macs: a native menu-bar app, daemon and CLI that serve every folder at a .test address, with PHP, databases, mail, logs and Xdebug built in.">
+<meta name="theme-color" content="#0e1320">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1320'/%3E%3Crect x='10' y='24' width='44' height='16' fill='none' stroke='%23f1ece2' stroke-width='4' rx='8'/%3E%3Crect x='10' y='24' width='28' height='16' fill='%23ff8a4c'/%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Paddock — Gowelle John">
+<meta property="og:description" content="Paddock is a local PHP and Laravel environment for Intel Macs: a native menu-bar app, daemon and CLI that serve every folder at a .test address, with PHP, databases, mail, logs and Xdebug built in.">
+<link rel="preload" href="/fonts/BigShoulders.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="/fonts/InstrumentSans.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="/index.html">
+    <span class="brand-mark" aria-hidden="true">GJ</span>
+    <span class="brand-name">Gowelle John</span>
+  </a>
+  <nav class="topnav" aria-label="Primary">
+    <a href="/index.html#catalogue">Catalogue</a>
+    <a href="/index.html#about">About</a>
+    <a href="/index.html#writing">Writing</a>
+    <a href="/index.html#contact">Contact</a>
+    <a href="https://github.com/gowelle" target="_blank" rel="noopener noreferrer">GitHub&nbsp;&#8599;</a>
+  </nav>
+</header>
+
+<main id="main" class="detail">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="/index.html#catalogue">&larr; All repositories</a>
+  </nav>
+
+  <div class="detail-hero">
+    <div class="detail-lead">
+      <p class="eyebrow">Developer tooling &middot; Swift</p>
+      <h1>Paddock</h1>
+      <p class="detail-tagline">A local PHP and Laravel environment for Intel Macs that works the moment it is installed.</p>
+      <p class="links detail-links">
+            <a href="https://github.com/gowelle/paddock" target="_blank" rel="noopener noreferrer">Repository&nbsp;&#8599;</a>
+            <a href="https://gowelle.github.io/paddock/" target="_blank" rel="noopener noreferrer">Website&nbsp;&#8599;</a>
+            <a href="https://github.com/gowelle/paddock/releases" target="_blank" rel="noopener noreferrer">Releases&nbsp;&#8599;</a>
+      </p>
+    </div>
+    <aside class="fact-card" aria-label="Project facts">
+      <dl>
+          <div><dt>Latest release</dt><dd>v0.4.0<span class="fact-sub">24 Nov 2026</span></dd></div>
+          <div><dt>Licence</dt><dd>Proprietary</dd></div>
+          <div><dt>Language</dt><dd><span class="lang"><i class="dot" style="--dot:#f05138"></i>Swift</span></dd></div>
+          <div><dt>Last push</dt><dd>24 Nov 2026</dd></div>
+      </dl>
+      
+    </aside>
+  </div>
+
+  <div class="detail-body">
+    <section class="prose-section" aria-labelledby="what-title">
+      <h2 id="what-title">What it does</h2>
+      <p>Paddock is a native macOS app, background service and command-line tool, written in Swift, that turns a folder of projects into working <code>.test</code> sites. Park a directory once and every folder inside it is served at <code>http://&lt;folder&gt;.test</code>, with trusted HTTPS when you ask for it.</p>
+      <p>It handles the parts of a local environment that usually need a checklist: PHP versions side by side, Xdebug per version, MySQL, PostgreSQL, Redis, Meilisearch, S3-compatible storage and a mail catcher — plus windows for mail, logs, databases and dumps.</p>
+    </section>
+
+      <section class="figures" aria-label="Screenshots">
+        
+        <figure class="shot">
+          <img src="/assets/paddock/menu-running-light.png" alt="Paddock menu-bar window with start and stop, site list and PHP version controls" loading="lazy" width="900" height="700">
+          <figcaption>The menu-bar app: start and stop, open sites, switch PHP versions.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="/assets/paddock/mail-text-light.png" alt="Paddock Mail window showing captured mail with HTML, plain text and source views" loading="lazy" width="900" height="700">
+          <figcaption>The Mail window: read what your apps send — HTML, plain text and source.</figcaption>
+        </figure>
+      </section>
+
+    <section class="prose-section" aria-labelledby="highlights-title">
+      <h2 id="highlights-title">Highlights</h2>
+      <ol class="highlight-list">
+        <li>Zero-configuration sites: park a folder once and every project inside gets its own <code>.test</code> address.</li>
+        <li>Trusted local HTTPS through Paddock's own certificate authority, so browsers never complain.</li>
+        <li>PHP versions side by side, each site pinning its own; <code>php</code> and <code>composer</code> follow the folder you are in.</li>
+        <li>One-action services — MySQL, PostgreSQL, Redis (Valkey), Meilisearch, object storage, mail catcher — each printing its own <code>.env</code> lines.</li>
+        <li>A Mail window for what your apps send, a Logs window that folds Laravel stack traces, and dumps from <code>dump()</code> and <code>dd()</code> out of the page.</li>
+        <li>A per-project <code>paddock.json</code> keeps queue workers, schedulers and websocket servers running, and restarts them after crashes.</li>
+      </ol>
+    </section>
+
+    <section class="prose-section install-section" id="install" aria-labelledby="install-title">
+      <h2 id="install-title">Install</h2>
+      <div class="code-block">
+        <pre><code>curl -fsSL https://raw.githubusercontent.com/gowelle/paddock/main/Scripts/install.sh | bash</code></pre>
+        <button type="button" class="copy-btn" data-copy="curl -fsSL https://raw.githubusercontent.com/gowelle/paddock/main/Scripts/install.sh | bash">Copy</button>
+        <span class="copy-status sr-only" role="status" aria-live="polite"></span>
+      </div>
+      <p class="install-note">Downloads the latest release, checks it against the release SHA-256, puts Paddock.app in /Applications and opens it. It asks for no password and runs nothing as root.</p>
+      
+        <p class="req-title">Runs on</p>
+        <ul class="req-list">
+          <li>macOS 13 or later, Intel</li>
+          <li>PHP 8.4 and 8.5</li>
+          <li>Swift 6</li>
+        </ul>
+    </section>
+
+      <section class="related" aria-labelledby="related-title">
+        <h2 id="related-title">Related</h2>
+        <ul class="related-list">
+          <li>
+            <a href="/projects/laravel-beem-africa.html">
+              <span class="related-name">laravel-beem-africa</span>
+              <span class="related-tag">Beem's SMS, OTP, airtime and payments behind one Laravel interface.</span>
+            </a>
+          </li>
+          <li>
+            <a href="/projects/flutterwave-php.html">
+              <span class="related-name">flutterwave-php</span>
+              <span class="related-tag">Flutterwave v4 payments, the Laravel way.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <nav class="pager" aria-label="Project navigation">
+        <a class="pager-link" href="/projects/azure-moderator.html" rel="prev">
+          <span>Previous</span>
+          <strong>azure-moderator</strong>
+        </a>
+        <a class="pager-link pager-next" href="/projects/laravel-beem-africa.html" rel="next">
+          <span>Next</span>
+          <strong>laravel-beem-africa</strong>
+        </a>
+      </nav>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 John Gowelle. Built by hand.</p>
+  <p>Project facts are a GitHub and Packagist snapshot taken 25 Nov 2026.</p>
+  <p><a href="https://github.com/gowelle" target="_blank" rel="noopener noreferrer">github.com/gowelle&nbsp;&#8599;</a></p>
+</footer>
+
+<script src="/detail.js" defer></script>
+</body>
+</html>
