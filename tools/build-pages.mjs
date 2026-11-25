@@ -14,21 +14,24 @@ const esc = (value) =>
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
 
+// Pages are one level down in web/projects/, so site-root paths become relative.
+const rel = (path) => (path.startsWith("/") ? `..${path}` : path);
+
 const bySlug = new Map(data.repos.map((repo) => [repo.slug, repo]));
 const favicon =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1320'/%3E%3Crect x='10' y='24' width='44' height='16' fill='none' stroke='%23f1ece2' stroke-width='4' rx='8'/%3E%3Crect x='10' y='24' width='28' height='16' fill='%23ff8a4c'/%3E%3C/svg%3E";
 
 const header = `
 <header class="topbar">
-  <a class="brand" href="/index.html">
+  <a class="brand" href="../index.html">
     <span class="brand-mark" aria-hidden="true">GJ</span>
     <span class="brand-name">Gowelle John</span>
   </a>
   <nav class="topnav" aria-label="Primary">
-    <a href="/index.html#catalogue">Catalogue</a>
-    <a href="/index.html#about">About</a>
-    <a href="/index.html#writing">Writing</a>
-    <a href="/index.html#contact">Contact</a>
+    <a href="../index.html#catalogue">Catalogue</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#writing">Writing</a>
+    <a href="../index.html#contact">Contact</a>
     <a href="https://github.com/gowelle" target="_blank" rel="noopener noreferrer">GitHub&nbsp;&#8599;</a>
   </nav>
 </header>`;
@@ -71,7 +74,7 @@ const figureBlock = (repo) => {
     .map(
       (image) => `
         <figure class="shot">
-          <img src="${esc(image.src)}" alt="${esc(image.alt)}" loading="lazy" width="900" height="700">
+          <img src="${esc(rel(image.src))}" alt="${esc(image.alt)}" loading="lazy" width="900" height="700">
           <figcaption>${esc(image.caption)}</figcaption>
         </figure>`
     )
@@ -101,7 +104,7 @@ const relatedBlock = (repo) => {
           ${related
             .map(
               (item) => `<li>
-            <a href="/projects/${item.slug}.html">
+            <a href="${item.slug}.html">
               <span class="related-name">${esc(item.name)}</span>
               <span class="related-tag">${esc(item.tagline)}</span>
             </a>
@@ -118,11 +121,11 @@ const pagerBlock = (repo) => {
   const next = data.repos[(index + 1) % data.repos.length];
   return `
       <nav class="pager" aria-label="Project navigation">
-        <a class="pager-link" href="/projects/${prev.slug}.html" rel="prev">
+        <a class="pager-link" href="${prev.slug}.html" rel="prev">
           <span>Previous</span>
           <strong>${esc(prev.name)}</strong>
         </a>
-        <a class="pager-link pager-next" href="/projects/${next.slug}.html" rel="next">
+        <a class="pager-link pager-next" href="${next.slug}.html" rel="next">
           <span>Next</span>
           <strong>${esc(next.name)}</strong>
         </a>
@@ -141,9 +144,9 @@ const page = (repo) => `<!doctype html>
 <meta property="og:type" content="article">
 <meta property="og:title" content="${esc(repo.name)} — Gowelle John">
 <meta property="og:description" content="${esc(repo.metaDescription)}">
-<link rel="preload" href="/fonts/BigShoulders.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="preload" href="/fonts/InstrumentSans.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="/styles.css">
+<link rel="preload" href="../fonts/BigShoulders.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="../fonts/InstrumentSans.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -151,7 +154,7 @@ ${header}
 
 <main id="main" class="detail">
   <nav class="crumbs" aria-label="Breadcrumb">
-    <a href="/index.html#catalogue">&larr; All repositories</a>
+    <a href="../index.html#catalogue">&larr; All repositories</a>
   </nav>
 
   <div class="detail-hero">
@@ -201,7 +204,7 @@ ${pagerBlock(repo)}
 </main>
 ${footer}
 
-<script src="/detail.js" defer></script>
+<script src="../detail.js" defer></script>
 </body>
 </html>
 `;

@@ -1,6 +1,6 @@
 # Portfolio
 
-Source for [gowelle-6yiatanstr2.qoder.website](https://gowelle-6yiatanstr2.qoder.website/), a showcase of my public repositories: PHP, Laravel and Swift tools I built because I needed them.
+Source for [gowelle-6yiatanstr2.qoder.website](https://gowelle-6yiatanstr2.qoder.website/), also served from GitHub Pages at [gowelle.github.io/portfolio](https://gowelle.github.io/portfolio/): a showcase of my public repositories, PHP, Laravel and Swift tools I built because I needed them.
 
 Plain HTML, CSS and JavaScript. No framework, no dependencies, no build step for the home page.
 
