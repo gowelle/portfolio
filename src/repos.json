@@ -1,5 +1,5 @@
 {
-  "snapshot": "25 Nov 2026",
+  "snapshot": "26 Nov 2026",
   "repos": [
     {
       "slug": "paddock",
@@ -13,7 +13,7 @@
       "releaseDate": "25 Nov 2026",
       "updated": "25 Nov 2026",
       "license": "Proprietary",
-      "downloads": 25,
+      "downloads": 116,
       "downloadsNote": "GitHub Releases",
       "intro": [
         "Paddock is a native macOS app, background service and command-line tool, written in Swift, that turns a folder of projects into working <code>.test</code> sites. Park a directory once and every folder inside it is served at <code>http://&lt;folder&gt;.test</code>, with trusted HTTPS when you ask for it.",
@@ -79,7 +79,7 @@
       "releaseDate": "7 Jun 2026",
       "updated": "7 Jun 2026",
       "license": "MIT",
-      "downloads": 414,
+      "downloads": 416,
       "downloadsNote": null,
       "intro": [
         "A Laravel package that wraps Beem's APIs in one consistent interface: SMS, OTP, airtime top-ups, payment checkout, collections, contacts, Moja multi-channel messaging and international SMS.",
@@ -130,7 +130,7 @@
       "releaseDate": "9 May 2026",
       "updated": "9 May 2026",
       "license": "MIT",
-      "downloads": 777,
+      "downloads": 780,
       "downloadsNote": null,
       "intro": [
         "A type-safe Laravel wrapper for Flutterwave's v4 API. It covers the whole surface — charges, refunds, transfers, settlements, virtual accounts, wallets, orders, banks and mobile networks — behind PHP 8.3+ DTOs.",
@@ -184,7 +184,7 @@
       "releaseDate": "21 Mar 2026",
       "updated": "20 Nov 2026",
       "license": "MIT",
-      "downloads": 382,
+      "downloads": 384,
       "downloadsNote": null,
       "intro": [
         "A Laravel package for moderating text and images with Google AI APIs. It ships validation rules, opt-in blocklists and an engine switch between the Natural Language API, Vision API and Gemini.",
@@ -235,7 +235,7 @@
       "releaseDate": "21 Mar 2026",
       "updated": "21 Mar 2026",
       "license": "MIT",
-      "downloads": 546,
+      "downloads": 548,
       "downloadsNote": null,
       "intro": [
         "Add the <code>HasSku</code> trait and Laravel e-commerce models get readable SKUs like <code>TM-TSH-ABC12345-RED-LRG</code>, generated from configurable prefixes, category accessors and variant rules.",
@@ -289,7 +289,7 @@
       "releaseDate": "21 Mar 2026",
       "updated": "21 Mar 2026",
       "license": "MIT",
-      "downloads": 1279,
+      "downloads": 1281,
       "downloadsNote": null,
       "intro": [
         "A Laravel wrapper for the Google Routes API with route calculation, N×M distance matrices and waypoint optimisation. It supports five travel modes, traffic-aware routing and Eloquent integration.",
@@ -340,7 +340,7 @@
       "releaseDate": "21 Mar 2026",
       "updated": "21 Mar 2026",
       "license": "MIT",
-      "downloads": 654,
+      "downloads": 656,
       "downloadsNote": null,
       "intro": [
         "A Laravel package for analysing text and images with Azure AI Content Safety. It includes validation rules, custom blocklists, protected-material detection, multimodal analysis and strongly typed results.",

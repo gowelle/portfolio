@@ -14,6 +14,7 @@ Plain HTML, CSS and JavaScript. No framework, no dependencies, no build step for
 | `src/repos.json` | The data behind the generated detail pages |
 | `tools/build-pages.mjs` | Generates `web/projects/*.html` from `src/repos.json` |
 | `tools/build-writing.mjs` | Rewrites the Writing list from the Medium RSS feed |
+| `tools/build-facts.mjs` | Refreshes versions, downloads, stars and dates from GitHub and Packagist |
 
 ## Preview locally
 
@@ -46,3 +47,15 @@ node tools/build-writing.mjs
 ```
 
 The latest six posts are shown, newest first, with each post's first sentence as its dek.
+
+## Repository facts
+
+Versions, release dates, last push, downloads and stars come straight from GitHub and Packagist. The same morning job refreshes them, regenerates the project pages, updates the home-page stats, Now strip and the snapshot date in the footer.
+
+To refresh them yourself:
+
+```sh
+node tools/build-facts.mjs
+```
+
+It uses `GITHUB_TOKEN` when set, which raises the API rate limit; without it the public limit is plenty for seven repositories.
