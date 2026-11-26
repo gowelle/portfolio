@@ -10,8 +10,8 @@
       "language": "Swift",
       "langColor": "#f05138",
       "version": "v0.5.4",
-      "releaseDate": "24 Nov 2026",
-      "updated": "24 Nov 2026",
+      "releaseDate": "25 Nov 2026",
+      "updated": "25 Nov 2026",
       "license": "Proprietary",
       "downloads": 25,
       "downloadsNote": "GitHub Releases",
@@ -30,11 +30,24 @@
       "installLabel": "Install in Terminal",
       "install": "curl -fsSL https://raw.githubusercontent.com/gowelle/paddock/main/Scripts/install.sh | bash",
       "installNote": "Downloads the latest release, checks it against the release SHA-256, puts Paddock.app in /Applications and opens it. It asks for no password and runs nothing as root.",
-      "requirements": ["macOS 13 or later, Intel", "PHP 8.4 and 8.5", "Swift 6"],
+      "requirements": [
+        "macOS 13 or later, Intel",
+        "PHP 8.4 and 8.5",
+        "Swift 6"
+      ],
       "links": [
-        { "label": "Repository", "url": "https://github.com/gowelle/paddock" },
-        { "label": "Website", "url": "https://gowelle.github.io/paddock/" },
-        { "label": "Releases", "url": "https://github.com/gowelle/paddock/releases" }
+        {
+          "label": "Repository",
+          "url": "https://github.com/gowelle/paddock"
+        },
+        {
+          "label": "Website",
+          "url": "https://gowelle.github.io/paddock/"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/gowelle/paddock/releases"
+        }
       ],
       "images": [
         {
@@ -48,7 +61,10 @@
           "caption": "The Mail window: read what your apps send — HTML, plain text and source."
         }
       ],
-      "related": ["laravel-beem-africa", "flutterwave-php"],
+      "related": [
+        "laravel-beem-africa",
+        "flutterwave-php"
+      ],
       "metaDescription": "Paddock is a local PHP and Laravel environment for Intel Macs: a native menu-bar app, daemon and CLI that serve every folder at a .test address, with PHP, databases, mail, logs and Xdebug built in."
     },
     {
@@ -82,12 +98,24 @@
       "installNote": "Then add your Beem credentials to the package configuration.",
       "requirements": [],
       "links": [
-        { "label": "Repository", "url": "https://github.com/gowelle/laravel-beem-africa" },
-        { "label": "Packagist", "url": "https://packagist.org/packages/gowelle/laravel-beem-africa" },
-        { "label": "Releases", "url": "https://github.com/gowelle/laravel-beem-africa/releases" }
+        {
+          "label": "Repository",
+          "url": "https://github.com/gowelle/laravel-beem-africa"
+        },
+        {
+          "label": "Packagist",
+          "url": "https://packagist.org/packages/gowelle/laravel-beem-africa"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/gowelle/laravel-beem-africa/releases"
+        }
       ],
       "images": [],
-      "related": ["flutterwave-php", "laravel-route-matrix"],
+      "related": [
+        "flutterwave-php",
+        "laravel-route-matrix"
+      ],
       "metaDescription": "Laravel package for Beem's APIs: SMS, OTP, airtime, payment checkout, collections, contacts, Moja multi-channel messaging and international SMS."
     },
     {
@@ -119,14 +147,29 @@
       "installLabel": "Install with Composer",
       "install": "composer require gowelle/flutterwave-php",
       "installNote": null,
-      "requirements": ["PHP 8.3+", "Laravel"],
+      "requirements": [
+        "PHP 8.3+",
+        "Laravel"
+      ],
       "links": [
-        { "label": "Repository", "url": "https://github.com/gowelle/flutterwave-php" },
-        { "label": "Packagist", "url": "https://packagist.org/packages/gowelle/flutterwave-php" },
-        { "label": "Releases", "url": "https://github.com/gowelle/flutterwave-php/releases" }
+        {
+          "label": "Repository",
+          "url": "https://github.com/gowelle/flutterwave-php"
+        },
+        {
+          "label": "Packagist",
+          "url": "https://packagist.org/packages/gowelle/flutterwave-php"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/gowelle/flutterwave-php/releases"
+        }
       ],
       "images": [],
-      "related": ["laravel-beem-africa", "sku-generator"],
+      "related": [
+        "laravel-beem-africa",
+        "sku-generator"
+      ],
       "metaDescription": "Type-safe Laravel wrapper for Flutterwave API v4: charges, refunds, transfers, virtual accounts, wallets and webhooks, with retries, rate limiting and webhook verification."
     },
     {
@@ -160,12 +203,24 @@
       "installNote": null,
       "requirements": [],
       "links": [
-        { "label": "Repository", "url": "https://github.com/gowelle/google-moderator" },
-        { "label": "Packagist", "url": "https://packagist.org/packages/gowelle/google-moderator" },
-        { "label": "Releases", "url": "https://github.com/gowelle/google-moderator/releases" }
+        {
+          "label": "Repository",
+          "url": "https://github.com/gowelle/google-moderator"
+        },
+        {
+          "label": "Packagist",
+          "url": "https://packagist.org/packages/gowelle/google-moderator"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/gowelle/google-moderator/releases"
+        }
       ],
       "images": [],
-      "related": ["azure-moderator", "sku-generator"],
+      "related": [
+        "azure-moderator",
+        "sku-generator"
+      ],
       "metaDescription": "Laravel package for text and image moderation using Google AI: opt-in blocklists, Swahili-first multi-language support, validation rules and switchable engines."
     },
     {
@@ -197,14 +252,29 @@
       "installLabel": "Install with Composer",
       "install": "composer require gowelle/sku-generator",
       "installNote": "Publish the configuration with php artisan vendor:publish --tag=sku-generator-config.",
-      "requirements": ["PHP 8.3+", "Laravel 11, 12 or 13"],
+      "requirements": [
+        "PHP 8.3+",
+        "Laravel 11, 12 or 13"
+      ],
       "links": [
-        { "label": "Repository", "url": "https://github.com/gowelle/sku-generator" },
-        { "label": "Packagist", "url": "https://packagist.org/packages/gowelle/sku-generator" },
-        { "label": "Releases", "url": "https://github.com/gowelle/sku-generator/releases" }
+        {
+          "label": "Repository",
+          "url": "https://github.com/gowelle/sku-generator"
+        },
+        {
+          "label": "Packagist",
+          "url": "https://packagist.org/packages/gowelle/sku-generator"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/gowelle/sku-generator/releases"
+        }
       ],
       "images": [],
-      "related": ["laravel-route-matrix", "laravel-beem-africa"],
+      "related": [
+        "laravel-route-matrix",
+        "laravel-beem-africa"
+      ],
       "metaDescription": "Generate meaningful, unique SKUs for Laravel e-commerce products and variants with a HasSku trait and configurable prefixes."
     },
     {
@@ -238,12 +308,24 @@
       "installNote": null,
       "requirements": [],
       "links": [
-        { "label": "Repository", "url": "https://github.com/gowelle/laravel-route-matrix" },
-        { "label": "Packagist", "url": "https://packagist.org/packages/gowelle/laravel-route-matrix" },
-        { "label": "Releases", "url": "https://github.com/gowelle/laravel-route-matrix/releases" }
+        {
+          "label": "Repository",
+          "url": "https://github.com/gowelle/laravel-route-matrix"
+        },
+        {
+          "label": "Packagist",
+          "url": "https://packagist.org/packages/gowelle/laravel-route-matrix"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/gowelle/laravel-route-matrix/releases"
+        }
       ],
       "images": [],
-      "related": ["sku-generator", "flutterwave-php"],
+      "related": [
+        "sku-generator",
+        "flutterwave-php"
+      ],
       "metaDescription": "Laravel wrapper for the Google Routes API: route calculation, distance matrices, travel modes, traffic-aware routing and waypoint optimisation."
     },
     {
@@ -277,12 +359,24 @@
       "installNote": null,
       "requirements": [],
       "links": [
-        { "label": "Repository", "url": "https://github.com/gowelle/azure-moderator" },
-        { "label": "Packagist", "url": "https://packagist.org/packages/gowelle/azure-moderator" },
-        { "label": "Releases", "url": "https://github.com/gowelle/azure-moderator/releases" }
+        {
+          "label": "Repository",
+          "url": "https://github.com/gowelle/azure-moderator"
+        },
+        {
+          "label": "Packagist",
+          "url": "https://packagist.org/packages/gowelle/azure-moderator"
+        },
+        {
+          "label": "Releases",
+          "url": "https://github.com/gowelle/azure-moderator/releases"
+        }
       ],
       "images": [],
-      "related": ["google-moderator", "laravel-beem-africa"],
+      "related": [
+        "google-moderator",
+        "laravel-beem-africa"
+      ],
       "metaDescription": "Laravel package for Azure AI Content Safety: text and image moderation, custom blocklists, protected-material detection and strongly typed results."
     }
   ]

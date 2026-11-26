@@ -59,7 +59,7 @@ const factRows = (repo) => {
   ];
   if (typeof repo.downloads === "number") {
     rows.push(
-      `<div><dt>Downloads</dt><dd>${repo.downloads.toLocaleString("en-US")}<span class="fact-sub">Packagist</span></dd></div>`
+      `<div><dt>Downloads</dt><dd>${repo.downloads.toLocaleString("en-US")}<span class="fact-sub">${esc(repo.downloadsNote || "Packagist")}</span></dd></div>`
     );
   }
   rows.push(
