@@ -13,6 +13,7 @@ Plain HTML, CSS and JavaScript. No framework, no dependencies, no build step for
 | `web/projects/` | One detail page per project. Generated, not hand-edited |
 | `src/repos.json` | The data behind the generated detail pages |
 | `tools/build-pages.mjs` | Generates `web/projects/*.html` from `src/repos.json` |
+| `tools/build-writing.mjs` | Rewrites the Writing list from the Medium RSS feed |
 
 ## Preview locally
 
@@ -33,3 +34,15 @@ node tools/build-pages.mjs
 ```
 
 Adding a project also means adding its card to the catalogue in `web/index.html`.
+
+## Writing
+
+The Writing list is generated from the Medium feed, not written by hand. It refreshes itself: a scheduled GitHub Actions run fetches `https://medium.com/feed/@chiefmfalme` each morning, updates the block between `<!-- writing:start -->` and `<!-- writing:end -->` in `web/index.html`, commits if something changed, and deploys.
+
+To refresh it yourself:
+
+```sh
+node tools/build-writing.mjs
+```
+
+The latest six posts are shown, newest first, with each post's first sentence as its dek.
